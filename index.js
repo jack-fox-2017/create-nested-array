@@ -3,12 +3,12 @@ function createNestedArr(jumlahRow, jumlahCol) {
   let arr =[];
 
   let string=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-   for (let i =0; i < 3; i++)
+   for (let i =0; i < jumlahRow; i++)
    {
      let kelompok =[];
-     for (let j =0; j < 5; j++)
+     for (let j =0; j < jumlahCol; j++)
         {
-          if (kelompok.length<6)
+          if (kelompok.length<=jumlahCol)
           {
             let rand = Math.floor(Math.random()*26);
             kelompok.push(string[rand]);
@@ -21,4 +21,4 @@ return arr;
   //createNestedArr(5,3)
 }
 
-console.log(createNestedArr(3,1))
+console.log(createNestedArr(3,5))
