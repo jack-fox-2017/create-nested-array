@@ -7,7 +7,7 @@ function createNestedArr(jumlahRow, jumlahCol) {
     let baris = [];
     board.push(baris);
     for (var j = 0; j < jumlahCol; j++) {
-      let random = Math.floor((Math.random() * 25) + 0);
+      let random = Math.floor((Math.random() * 26) + 0);
       baris.push(alphabet[random])
     }
   }
